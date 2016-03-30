@@ -1,2 +1,1 @@
 # algorithmi-doc
-teste
