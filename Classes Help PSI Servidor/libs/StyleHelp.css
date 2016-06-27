@@ -1,0 +1,112 @@
+html, body, a { 
+    /*color: #3B4C56;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;*/
+
+     margin: 0;
+    min-height: 100%;
+    min-width: 700px;
+
+}
+
+
+body {
+    color: #767676;
+    background: #f1f2f7;
+    font-family: 'Open Sans', sans-serif;
+    background: -moz-linear-gradient(246deg, rgba(188, 193, 186, 1) 0%, rgba(253, 228, 172, 1) 48%, rgba(255, 246, 184, 1) 69%, rgba(252, 171, 134, 1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(252, 171, 134, 1)), color-stop(31%, rgba(255, 246, 184, 1)), color-stop(52%, rgba(253, 228, 172, 1)), color-stop(100%, rgba(188, 193, 186, 1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(246deg, rgba(188, 193, 186, 1) 0%, rgba(253, 228, 172, 1) 48%, rgba(255, 246, 184, 1) 69%, rgba(252, 171, 134, 1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(246deg, rgba(188, 193, 186, 1) 0%, rgba(253, 228, 172, 1) 48%, rgba(255, 246, 184, 1) 69%, rgba(252, 171, 134, 1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(246deg, rgba(188, 193, 186, 1) 0%, rgba(253, 228, 172, 1) 48%, rgba(255, 246, 184, 1) 69%, rgba(252, 171, 134, 1) 100%); /* ie10+ */
+    background: linear-gradient(204deg, rgba(188, 193, 186, 1) 0%, rgba(253, 228, 172, 1) 48%, rgba(255, 246, 184, 1) 69%, rgba(252, 171, 134, 1) 100%); /* w3c */
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+ 
+
+
+a:hover{
+    cursor:pointer;
+    color: #F0DA5E;
+}
+
+
+.tree ul {
+    list-style: none outside none;
+    font-size: 18px;
+    line-height: 2;
+
+}
+.tree li a {
+    line-height: 25px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.tree > ul > li > a {
+    color: #3B4C56;
+    display: block;
+    font-weight: normal;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+}
+.tree li.parent > a {
+    padding: 0 0 0 28px;
+}
+
+
+.tree li.parent > a:before {
+    background-image: url("plus_minus_icons.png");
+    background-position: 25px center;
+    content: ""; 
+    display: block;
+    height: 21px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    vertical-align: middle;
+    width: 23px;
+    font-size: 18px;
+}
+.tree ul li.active > a:before {
+
+    background-position: 0 center;
+    font-size: 18px;
+}
+.tree ul li ul {
+    border-left: 1px solid #D9DADB;
+    display: none;
+    margin: 0 0 0 12px;
+    overflow: hidden;
+    padding: 0 0 0 25px;
+    font-size: 18px;
+}
+.tree ul li ul li {
+
+    position: relative;
+    font-size: 18px;
+}
+.tree ul li ul li:before {
+    border-bottom: 1px dashed #E2E2E3;
+    content: "";
+    left: -20px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+    font-size: 18px;
+
+}
+#wrapper {
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+
