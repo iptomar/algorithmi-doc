@@ -1,0 +1,27 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 12:36:29:442
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        DEFINE INTEGER var2 SET 0
+        DEFINE INTEGER soma SET 0
+        WRITE "Introduza o primeiro limite: \n" 
+        READ var1 
+        WRITE "Introduza o segundo limite: \n" 
+        DO
+
+            READ var2 
+        DOWHILE var2 LESS_THAN var1 
+        ITERATE INTEGER i1 FROM var1  TO var2  STEP 1 
+            IF i1 GREATHER_THAN 0 AND i1 MOD 2 DIFFERENT 0 
+                EXECUTE soma SET soma SUM i1 
+            END IF
+
+        END ITERATE
+        WRITE "Soma: " SUM soma 
+    END MAIN_PROGRAM_NAME

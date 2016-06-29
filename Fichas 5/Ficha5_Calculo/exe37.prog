@@ -1,0 +1,19 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 15:55:35:174
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL var1 SET 0.0
+        DEFINE REAL expoente SET 0.0
+        WRITE "Introduza um numero: \n" 
+        READ var1 
+        WRITE "Introduza o expoente: \n" 
+        READ expoente 
+        ITERATE INTEGER i1 FROM 1  TO expoente  STEP 1 
+            EXECUTE var1 SET var1 MULT var1 
+        END ITERATE
+    END MAIN_PROGRAM_NAME

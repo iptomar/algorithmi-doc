@@ -1,0 +1,23 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 01:15:30:932
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+MEMORY GLOBAL_MEMORY_NAME
+
+    DEFINE INTEGER x SET 10
+    DEFINE REAL y SET 0.5
+    END GLOBAL_MEMORY_NAME
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL soma SET 0.0
+        EXECUTE soma SET funcao1 ROUND_OPEN x COMMA y ROUND_CLOSE 
+        WRITE "Soma: " SUM soma 
+    END MAIN_PROGRAM_NAME
+
+    FUNCTION REAL funcao1 ROUND_OPEN INTEGER a COMMA REAL b ROUND_CLOSE
+        RETURN a SUM b 
+    END funcao1

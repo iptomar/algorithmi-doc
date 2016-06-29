@@ -1,0 +1,28 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 13:32:59:652
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER soma SET 0
+        DEFINE INTEGER contador SET 1
+        DO
+
+            ITERATE INTEGER i1 FROM 1  TO contador  STEP 1 
+                IF contador MOD i1 EQUAL 0 
+                    EXECUTE soma SET soma SUM i1 
+                END IF
+
+            END ITERATE
+            EXECUTE soma SET soma SUB 1 
+            IF soma EQUAL contador 
+                WRITE "Primo: " SUM contador SUM "\n" 
+            END IF
+
+            EXECUTE soma SET 0 
+            EXECUTE contador SET contador SUM 1 
+        DOWHILE contador LESS_THAN 100 
+    END MAIN_PROGRAM_NAME

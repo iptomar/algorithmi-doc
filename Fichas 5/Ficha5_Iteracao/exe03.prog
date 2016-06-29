@@ -1,0 +1,16 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 01:39:28:831
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        WRITE "Introduza numero de vezes: \n" 
+        READ var1 
+        ITERATE INTEGER i1 FROM 0  TO var1  STEP 1 
+            WRITE "Ola mundo \n" 
+        END ITERATE
+    END MAIN_PROGRAM_NAME

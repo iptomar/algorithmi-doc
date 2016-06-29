@@ -1,0 +1,28 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 14:46:02:980
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL pi SET 0.0
+        DEFINE REAL erro SET 0.0
+        DEFINE REAL var1 SET 0.0
+        DEFINE REAL var2 SET 0.0
+        DEFINE REAL var3 SET 0.0
+        DEFINE REAL var4 SET 0.0
+        DEFINE REAL var5 SET 0.0
+        ITERATE INTEGER i1 FROM 0  TO 30  STEP 1 
+            EXECUTE var1 SET 1 DIV ROUND_OPEN POW ROUND_OPEN 16 COMMA i1 ROUND_CLOSE ROUND_CLOSE 
+            EXECUTE var2 SET 4 DIV ROUND_OPEN 8 MULT i1 SUM 1 ROUND_CLOSE 
+            EXECUTE var3 SET 2 DIV ROUND_OPEN 8 MULT i1 SUM 4 ROUND_CLOSE 
+            EXECUTE var4 SET 1 DIV ROUND_OPEN 8 MULT i1 SUM 5 ROUND_CLOSE 
+            EXECUTE var5 SET 1 DIV ROUND_OPEN 8 MULT i1 SUM 6 ROUND_CLOSE 
+            EXECUTE pi SET pi SUM ROUND_OPEN var1 MULT ROUND_OPEN var2 SUB var3 SUB var4 SUB var5 ROUND_CLOSE ROUND_CLOSE 
+        END ITERATE
+        EXECUTE erro SET CONST_PI SUB pi 
+        WRITE "PI calculado: " SUM pi SUM "\n" 
+        WRITE "Erro: " SUM erro 
+    END MAIN_PROGRAM_NAME

@@ -1,0 +1,15 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 13:04:19:091
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER factorial SET 1
+        ITERATE INTEGER i1 FROM 1  TO 30  STEP 1 
+            EXECUTE factorial SET factorial MULT i1 
+            WRITE "Factorial de " SUM i1 SUM ":" SUM factorial SUM "\n" 
+        END ITERATE
+    END MAIN_PROGRAM_NAME

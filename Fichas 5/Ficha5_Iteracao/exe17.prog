@@ -1,0 +1,26 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 01:50:24:913
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        WRITE "Introduza comprimento: \n" 
+        READ var1 
+        ITERATE INTEGER i1 FROM 0  TO var1 SUB 1  STEP 1 
+            IF i1 MOD 10 EQUAL 0 
+                WRITE "#" 
+            ELSE
+                IF i1 MOD 5 EQUAL 0 
+                    WRITE "|" 
+                ELSE
+                    WRITE "." 
+                END IF
+
+            END IF
+
+        END ITERATE
+    END MAIN_PROGRAM_NAME

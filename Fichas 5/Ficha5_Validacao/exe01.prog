@@ -1,0 +1,16 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 10:49:07:172
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        WRITE "Introduza um numero maior que zero: \n" 
+        WHILE var1 LESS_OR_EQUAL 0 
+            READ var1 
+        END WHILE
+
+    END MAIN_PROGRAM_NAME

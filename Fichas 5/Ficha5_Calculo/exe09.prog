@@ -1,0 +1,21 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 13:04:11:372
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        DEFINE INTEGER factorial SET 1
+        WRITE "Introduza um numero: \n" 
+        READ var1 
+        IF var1 GREATHER_THAN 0 
+            ITERATE INTEGER i1 FROM 1  TO var1  STEP 1 
+                EXECUTE factorial SET factorial MULT i1 
+            END ITERATE
+        END IF
+
+        WRITE "Factorial: " SUM factorial 
+    END MAIN_PROGRAM_NAME

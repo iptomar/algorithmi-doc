@@ -1,0 +1,22 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/28 20:14:47:216
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+MEMORY GLOBAL_MEMORY_NAME
+
+    DEFINE INTEGER x SET 10
+    END GLOBAL_MEMORY_NAME
+
+    BEGIN MAIN_PROGRAM_NAME
+        EXECUTE x SET funcao1 ROUND_OPEN x ROUND_CLOSE 
+        WRITE "valor de x: " SUM x 
+    END MAIN_PROGRAM_NAME
+
+    FUNCTION INTEGER funcao1 ROUND_OPEN INTEGER y ROUND_CLOSE
+        EXECUTE y SET y MULT 2 
+        RETURN y 
+    END funcao1
