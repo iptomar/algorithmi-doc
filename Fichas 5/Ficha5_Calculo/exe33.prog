@@ -1,0 +1,20 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 15:38:01:466
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL var1 SET 0.0
+        DEFINE INTEGER contador SET 10
+        DEFINE REAL resto SET 0.0
+        WRITE "Introduza um numero inteiro: \n" 
+        READ var1 
+        DO
+
+            EXECUTE resto SET var1 DIV 10 
+            WRITE " " SUM var1 SUM " " 
+        DOWHILE var1 DIV 10 LESS_THAN 0 
+    END MAIN_PROGRAM_NAME

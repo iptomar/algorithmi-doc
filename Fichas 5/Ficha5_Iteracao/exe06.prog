@@ -1,0 +1,13 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 01:39:27:880
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        ITERATE INTEGER i1 FROM 0  TO 9  STEP 1 
+            WRITE "*" 
+        END ITERATE
+    END MAIN_PROGRAM_NAME

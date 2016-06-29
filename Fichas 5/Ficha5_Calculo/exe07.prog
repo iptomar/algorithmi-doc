@@ -1,0 +1,26 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 12:50:28:688
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        DEFINE INTEGER soma SET 0
+        DEFINE INTEGER media SET 0
+        DEFINE INTEGER contador SET 0
+        WRITE "Introduza um numero: \n" 
+        READ var1 
+        WHILE var1 DIFFERENT 0 
+            EXECUTE soma SET soma SUM var1 
+            EXECUTE contador SET contador SUM 1 
+            WRITE "Introduza um numero: \n" 
+            READ var1 
+        END WHILE
+
+        EXECUTE media SET soma DIV contador 
+        WRITE "Soma: " SUM soma SUM "\n" 
+        WRITE "Media: " SUM media SUM "\n" 
+    END MAIN_PROGRAM_NAME

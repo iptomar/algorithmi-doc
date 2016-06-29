@@ -1,0 +1,22 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 12:23:40:929
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        WRITE "Introduza a sua nota final: \n" 
+        DO
+
+            READ var1 
+        DOWHILE var1 LESS_THAN 0 AND var1 GREATHER_OR_EQUAL 21 
+        IF var1 GREATHER_OR_EQUAL 10 
+            WRITE "Esta aprovado" 
+        ELSE
+            WRITE "Esta reprovado" 
+        END IF
+
+    END MAIN_PROGRAM_NAME

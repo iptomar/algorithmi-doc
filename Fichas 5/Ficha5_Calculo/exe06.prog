@@ -1,0 +1,37 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 12:44:42:579
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        DEFINE INTEGER soma SET 0
+        DEFINE INTEGER media SET 0
+        DEFINE INTEGER minimo SET 0
+        DEFINE INTEGER maximo SET 0
+        WRITE "Introduza um numero: \n" 
+        READ minimo 
+        EXECUTE maximo SET minimo 
+        EXECUTE soma SET soma SUM minimo 
+        ITERATE INTEGER i1 FROM 0  TO 8  STEP 1 
+            WRITE "Introduza um numero: \n" 
+            READ var1 
+            IF var1 GREATHER_THAN maximo 
+                EXECUTE maximo SET var1 
+            END IF
+
+            IF var1 LESS_THAN minimo 
+                EXECUTE minimo SET var1 
+            END IF
+
+            EXECUTE soma SET soma SUM var1 
+        END ITERATE
+        EXECUTE media SET soma DIV 10 
+        WRITE "Soma: " SUM soma SUM "\n" 
+        WRITE "Media: " SUM media SUM "\n" 
+        WRITE "Maximo: " SUM maximo SUM "\n" 
+        WRITE "Minimo: " SUM minimo SUM "\n" 
+    END MAIN_PROGRAM_NAME

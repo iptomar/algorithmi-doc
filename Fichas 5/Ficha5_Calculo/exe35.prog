@@ -1,0 +1,13 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 15:49:26:720
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL var1 SET 0.0
+        WRITE "Introduza um numero: \n" 
+        READ var1 
+    END MAIN_PROGRAM_NAME

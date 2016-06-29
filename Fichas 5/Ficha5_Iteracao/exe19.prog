@@ -1,0 +1,26 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 02:46:26:128
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER dividendo SET 0
+        DEFINE INTEGER divisor SET 0
+        DEFINE INTEGER resto SET 0
+        DEFINE INTEGER quociente SET 0
+        WRITE "Introduza o dividendo: \n" 
+        READ dividendo 
+        WRITE "Introduza o divisor: \n" 
+        READ divisor 
+        EXECUTE resto SET dividendo SUB divisor 
+        DO
+
+            EXECUTE resto SET resto SUB divisor 
+            EXECUTE quociente SET quociente SUM 1 
+        DOWHILE resto SUB divisor GREATHER_THAN 0 
+        WRITE "quociente: " SUM quociente 
+        WRITE "resto: " SUM resto 
+    END MAIN_PROGRAM_NAME

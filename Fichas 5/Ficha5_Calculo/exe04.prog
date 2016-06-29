@@ -1,0 +1,18 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 12:44:28:751
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        DEFINE INTEGER soma SET 0
+        ITERATE INTEGER i1 FROM 0  TO 9  STEP 1 
+            WRITE "Introduza um numero: \n" 
+            READ var1 
+            EXECUTE soma SET soma SUM var1 
+        END ITERATE
+        WRITE "Soma: " SUM soma SUM "\n" 
+    END MAIN_PROGRAM_NAME

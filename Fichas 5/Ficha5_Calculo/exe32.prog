@@ -1,0 +1,43 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 15:25:35:037
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL pi SET 0.0
+        DEFINE REAL erro SET 0.0
+        DEFINE REAL var1 SET 0.0
+        DEFINE REAL arctg SET 0.0
+        DEFINE INTEGER contador SET 3
+        EXECUTE var1 SET 1 DIV 5 
+        EXECUTE arctg SET arctg SUM var1 
+        ITERATE INTEGER i1 FROM 1  TO 10  STEP 1 
+            IF i1 MOD 2 EQUAL 0 
+                EXECUTE arctg SET arctg SUM ROUND_OPEN 1 DIV ROUND_OPEN contador MULT POW ROUND_OPEN 5 COMMA contador ROUND_CLOSE ROUND_CLOSE ROUND_CLOSE 
+            ELSE
+                EXECUTE arctg SET arctg SUB ROUND_OPEN 1 DIV ROUND_OPEN contador MULT POW ROUND_OPEN 5 COMMA contador ROUND_CLOSE ROUND_CLOSE ROUND_CLOSE 
+            END IF
+
+            EXECUTE contador SET contador SUM 2 
+        END ITERATE
+        EXECUTE pi SET pi SUM 4 MULT arctg 
+        EXECUTE contador SET 3 
+        EXECUTE var1 SET 1 DIV 239 
+        EXECUTE arctg SET arctg SUM var1 
+        ITERATE INTEGER i2 FROM 1  TO 10  STEP 1 
+            IF i2 MOD 2 EQUAL 0 
+                EXECUTE arctg SET arctg SUM ROUND_OPEN 1 DIV ROUND_OPEN contador MULT POW ROUND_OPEN 239 COMMA contador ROUND_CLOSE ROUND_CLOSE ROUND_CLOSE 
+            ELSE
+                EXECUTE arctg SET arctg SUB ROUND_OPEN 1 DIV ROUND_OPEN contador MULT POW ROUND_OPEN 239 COMMA contador ROUND_CLOSE ROUND_CLOSE ROUND_CLOSE 
+            END IF
+
+        END ITERATE
+        EXECUTE pi SET pi SUB arctg 
+        EXECUTE pi SET 4 MULT pi 
+        EXECUTE erro SET CONST_PI SUB pi 
+        WRITE "PI calculado: " SUM pi SUM "\n" 
+        WRITE "Erro: " SUM erro 
+    END MAIN_PROGRAM_NAME

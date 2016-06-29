@@ -1,0 +1,17 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 01:58:12:799
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        WRITE "Introduza numero de dentes: \n" 
+        READ var1 
+        ITERATE INTEGER i1 FROM 0  TO var1 SUB 1  STEP 1 
+            WRITE "/" 
+            WRITE " \\ " 
+        END ITERATE
+    END MAIN_PROGRAM_NAME

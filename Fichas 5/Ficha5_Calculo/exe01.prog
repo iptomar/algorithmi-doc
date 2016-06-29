@@ -1,0 +1,15 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 12:28:17:448
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        ITERATE INTEGER i1 FROM 1  TO 5  STEP 1 
+            EXECUTE var1 SET var1 SUM i1 
+        END ITERATE
+        WRITE "" SUM var1 
+    END MAIN_PROGRAM_NAME

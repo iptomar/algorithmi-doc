@@ -1,0 +1,19 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 01:39:25:494
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        DEFINE INTEGER var2 SET 0
+        WRITE "Introduza o primeiro limite: \n" 
+        READ var1 
+        WRITE "Introduza o segundo limite: \n" 
+        READ var2 
+        ITERATE INTEGER i1 FROM var1 SUB 1  TO var2 SUM 1  STEP 1 
+            WRITE "" SUM i1 SUM "\n" 
+        END ITERATE
+    END MAIN_PROGRAM_NAME

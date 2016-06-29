@@ -1,0 +1,16 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 15:56:13:996
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL var1 SET 0.0
+        ITERATE INTEGER i1 FROM 1  TO 32  STEP 1 
+            EXECUTE var1 SET i1 MULT i1 
+            WRITE " - " SUM var1 SUM "\n" 
+            EXECUTE var1 SET 0 
+        END ITERATE
+    END MAIN_PROGRAM_NAME

@@ -1,0 +1,33 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 15:25:31:746
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL arctg SET 0.0
+        DEFINE REAL arco SET 0.0
+        DEFINE REAL var1 SET 0.0
+        DEFINE INTEGER contador SET 3
+        WRITE "Introduza o arco: \n" 
+        READ arco 
+        IF arco GREATHER_THAN 0 AND arco LESS_THAN CONST_PI MULT 2 
+            EXECUTE var1 SET 1 DIV arco 
+            EXECUTE arctg SET arctg SUM var1 
+            ITERATE INTEGER i1 FROM 1  TO 10  STEP 1 
+                IF i1 MOD 2 EQUAL 0 
+                    EXECUTE arctg SET arctg SUM ROUND_OPEN 1 DIV ROUND_OPEN contador MULT POW ROUND_OPEN arco COMMA contador ROUND_CLOSE ROUND_CLOSE ROUND_CLOSE 
+                ELSE
+                    EXECUTE arctg SET arctg SUB ROUND_OPEN 1 DIV ROUND_OPEN contador MULT POW ROUND_OPEN arco COMMA contador ROUND_CLOSE ROUND_CLOSE ROUND_CLOSE 
+                END IF
+
+                EXECUTE contador SET contador SUM 2 
+            END ITERATE
+            WRITE "ARCCOTx = " SUM arctg 
+        ELSE
+            WRITE "arco invalido" 
+        END IF
+
+    END MAIN_PROGRAM_NAME

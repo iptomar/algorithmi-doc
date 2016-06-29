@@ -1,0 +1,95 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/28 20:31:11:607
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+MEMORY GLOBAL_MEMORY_NAME
+
+    DEFINE INTEGER v SQUARE_OPEN 6  SQUARE_CLOSE
+    END GLOBAL_MEMORY_NAME
+
+    BEGIN MAIN_PROGRAM_NAME
+    END MAIN_PROGRAM_NAME
+
+    FUNCTION VOID funcao6 ROUND_OPEN ROUND_CLOSE
+        ITERATE INTEGER i1 FROM 0  TO 5  STEP 1 
+            EXECUTE v SQUARE_OPEN i1  SQUARE_CLOSE SET i1 
+        END ITERATE
+    END funcao6
+
+    FUNCTION VOID funcao7 ROUND_OPEN ROUND_CLOSE
+        ITERATE INTEGER i1 FROM 0  TO 5  STEP 1 
+
+        END ITERATE
+    END funcao7
+
+    FUNCTION VOID funcao8 ROUND_OPEN INTEGER a SQUARE_OPEN SQUARE_CLOSE ROUND_CLOSE
+        DEFINE INTEGER soma SET 0
+        ITERATE INTEGER i1 FROM 0  TO 5  STEP 1 
+            EXECUTE soma SET soma SUM v SQUARE_OPEN i1 SQUARE_CLOSE 
+        END ITERATE
+        WRITE "" SUM soma 
+    END funcao8
+
+    FUNCTION VOID funcao9 ROUND_OPEN ROUND_CLOSE
+        DEFINE INTEGER soma SET 0
+        ITERATE INTEGER i1 FROM 0  TO 5  STEP 1 
+            IF v SQUARE_OPEN i1 SQUARE_CLOSE MOD 2 EQUAL 0 
+                EXECUTE soma SET soma SUM v SQUARE_OPEN i1 SQUARE_CLOSE 
+            END IF
+
+        END ITERATE
+        WRITE "" SUM soma 
+    END funcao9
+
+    FUNCTION VOID funcao10 ROUND_OPEN ROUND_CLOSE
+        DEFINE INTEGER aux1 SET v SQUARE_OPEN 0 SQUARE_CLOSE
+        DEFINE INTEGER aux2 SET 0
+        ITERATE INTEGER i1 FROM 1  TO 5  STEP 1 
+            EXECUTE aux2 SET v SQUARE_OPEN i1 SQUARE_CLOSE 
+            IF aux2 GREATHER_THAN aux1 
+                EXECUTE aux1 SET aux2 
+            END IF
+
+        END ITERATE
+        WRITE "maximo: " SUM aux1 
+    END funcao10
+
+    FUNCTION VOID funcao11 ROUND_OPEN ROUND_CLOSE
+        DEFINE INTEGER aux1 SET v SQUARE_OPEN 0 SQUARE_CLOSE
+        DEFINE INTEGER aux2 SET 0
+        ITERATE INTEGER i1 FROM 1  TO 5  STEP 1 
+            EXECUTE aux2 SET v SQUARE_OPEN i1 SQUARE_CLOSE 
+            IF aux2 LESS_THAN aux1 
+                EXECUTE aux1 SET aux2 
+            END IF
+
+        END ITERATE
+        WRITE "minimo: " SUM aux1 
+    END funcao11
+
+    FUNCTION VOID funcao12 ROUND_OPEN INTEGER a ROUND_CLOSE
+        ITERATE INTEGER i1 FROM 0  TO 5  STEP 1 
+            IF v SQUARE_OPEN i1 SQUARE_CLOSE EQUAL a 
+                WRITE "Contem o valor" 
+            END IF
+
+        END ITERATE
+    END funcao12
+
+    FUNCTION VOID funcao13 ROUND_OPEN ROUND_CLOSE
+        DEFINE INTEGER aux SET 0
+        ITERATE INTEGER i1 FROM 0  TO 5  STEP 1 
+            ITERATE INTEGER i2 FROM i1 SUM 1  TO 5  STEP 1 
+                IF v SQUARE_OPEN i1 SQUARE_CLOSE GREATHER_THAN v SQUARE_OPEN i2 SQUARE_CLOSE 
+                    EXECUTE aux SET v SQUARE_OPEN i1 SQUARE_CLOSE 
+                    EXECUTE v SQUARE_OPEN i1  SQUARE_CLOSE SET v SQUARE_OPEN i2 SQUARE_CLOSE 
+                    EXECUTE v SQUARE_OPEN i2  SQUARE_CLOSE SET aux 
+                END IF
+
+            END ITERATE
+        END ITERATE
+    END funcao13

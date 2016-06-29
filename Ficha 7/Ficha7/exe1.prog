@@ -1,0 +1,16 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 01:15:26:596
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+MEMORY GLOBAL_MEMORY_NAME
+
+    DEFINE TEXT var1 SET "Ola Memoria Global"
+    END GLOBAL_MEMORY_NAME
+
+    BEGIN MAIN_PROGRAM_NAME
+        WRITE var1 
+    END MAIN_PROGRAM_NAME

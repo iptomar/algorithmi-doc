@@ -1,0 +1,23 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 01:50:18:659
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        ITERATE INTEGER i1 FROM 0  TO 30  STEP 1 
+            IF i1 MOD 10 EQUAL 0 
+                WRITE "#" 
+            ELSE
+                IF i1 MOD 5 EQUAL 0 
+                    WRITE "|" 
+                ELSE
+                    WRITE "." 
+                END IF
+
+            END IF
+
+        END ITERATE
+    END MAIN_PROGRAM_NAME

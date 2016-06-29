@@ -1,0 +1,26 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/29 13:19:02:214
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        DEFINE INTEGER conta SET 0
+        WRITE "Introduza um numero: \n" 
+        READ var1 
+        IF var1 GREATHER_OR_EQUAL 0 
+            ITERATE INTEGER i1 FROM 1  TO var1 SUB 1  STEP 1 
+                IF var1 MOD i1 EQUAL 0 
+                    EXECUTE conta SET conta SUM 1 
+                END IF
+
+            END ITERATE
+            WRITE "Soma divisores: " SUM conta 
+        ELSE
+            WRITE "numero invalido" 
+        END IF
+
+    END MAIN_PROGRAM_NAME
