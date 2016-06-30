@@ -1,0 +1,18 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/30 01:13:49:836
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL var1 SET 0.0
+        DEFINE REAL res SET 0.0
+        WRITE "Insira um valor: \n" 
+        READ var1 
+        EXECUTE res SET HIPERBOLIC_SIN ROUND_OPEN var1 ROUND_CLOSE 
+        WRITE "SINH - " SUM res SUM "\n" 
+        EXECUTE res SET HIPERBOLIC_COS ROUND_OPEN var1 ROUND_CLOSE 
+        WRITE "COSH - " SUM res 
+    END MAIN_PROGRAM_NAME

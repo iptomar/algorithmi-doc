@@ -1,0 +1,22 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/30 01:13:52:094
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        DEFINE REAL aux1 SET 0.0
+        DEFINE REAL aux2 SET 0.0
+        DEFINE REAL res SET 0.0
+        WRITE "Insira um numero inteiro: \n" 
+        READ var1 
+        EXECUTE aux1 SET EXP ROUND_OPEN var1 ROUND_CLOSE 
+        EXECUTE aux2 SET EXP ROUND_OPEN -1 MULT var1 ROUND_CLOSE 
+        EXECUTE res SET ROUND_OPEN aux1 SUB aux2 ROUND_CLOSE DIV 2 
+        WRITE "primeira formula: " SUM res 
+        EXECUTE res SET ROUND_OPEN aux1 SUB aux2 ROUND_CLOSE DIV ROUND_OPEN aux1 SUM aux2 ROUND_CLOSE 
+        WRITE "segunda formula: " SUM res 
+    END MAIN_PROGRAM_NAME
