@@ -1,0 +1,19 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/30 01:13:54:005
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL ang SET 0.0
+        DEFINE REAL cotg SET 0.0
+        WRITE "Insira um angulo: \n" 
+        READ ang 
+        WRITE "Seno(" SUM ang SUM ") = " SUM SIN ROUND_OPEN ang ROUND_CLOSE 
+        WRITE "\nCos(" SUM ang SUM ") = " SUM COS ROUND_OPEN ang ROUND_CLOSE 
+        WRITE "\nTang(" SUM ang SUM ") = " SUM TAN ROUND_OPEN ang ROUND_CLOSE 
+        EXECUTE cotg SET COS ROUND_OPEN ang ROUND_CLOSE DIV SIN ROUND_OPEN ang ROUND_CLOSE 
+        WRITE "\nCotg(" SUM ang SUM ") = " SUM cotg 
+    END MAIN_PROGRAM_NAME

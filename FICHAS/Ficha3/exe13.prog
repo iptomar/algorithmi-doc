@@ -1,0 +1,22 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/30 01:13:47:880
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE INTEGER var1 SET 0
+        DEFINE INTEGER var2 SET 0
+        WRITE "Introduza um numero inteiro: \n" 
+        READ var1 
+        WRITE "Introduza um outro numero inteiro: \n" 
+        READ var2 
+        IF var1 GREATHER_THAN var2 
+            WRITE " - " SUM var1 
+        ELSE
+            WRITE " - " SUM var2 
+        END IF
+
+    END MAIN_PROGRAM_NAME

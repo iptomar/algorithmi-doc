@@ -1,0 +1,16 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/30 01:13:56:140
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL ang SET 0.0
+        DEFINE REAL cotg SET 0.0
+        WRITE "Insira um angulo: \n" 
+        READ ang 
+        EXECUTE cotg SET COS ROUND_OPEN ang ROUND_CLOSE DIV SIN ROUND_OPEN ang ROUND_CLOSE 
+        WRITE "Cotagente: " SUM cotg 
+    END MAIN_PROGRAM_NAME

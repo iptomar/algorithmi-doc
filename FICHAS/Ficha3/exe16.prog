@@ -1,0 +1,15 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/30 01:24:45:760
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL var1 SET 0.0
+        ITERATE INTEGER i1 FROM 0  TO 5  STEP 1 
+            EXECUTE var1 SET RANDOM ROUND_OPEN ROUND_CLOSE 
+            WRITE " - " SUM var1 SUM "\n" 
+        END ITERATE
+    END MAIN_PROGRAM_NAME

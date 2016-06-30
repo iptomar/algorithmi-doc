@@ -1,0 +1,21 @@
+// ID        PROBLEM
+// CODE      0
+// USER      Algorithmi
+// NAME      Utilizador anónimo
+// DATE      2016/06/30 01:24:47:927
+// VERSION   Algorithmi 4.22 (PSI)
+
+
+    BEGIN MAIN_PROGRAM_NAME
+        DEFINE REAL var1 SET 0.0
+        DEFINE INTEGER var2 SET 0
+        DO
+
+            EXECUTE var1 SET RANDOM ROUND_OPEN ROUND_CLOSE MULT 100 
+            IF var1 LESS_THAN 50 
+                WRITE " - " SUM var1 SUM "\n" 
+                EXECUTE var2 SET var2 SUM 1 
+            END IF
+
+        DOWHILE var2 LESS_THAN 6 
+    END MAIN_PROGRAM_NAME
