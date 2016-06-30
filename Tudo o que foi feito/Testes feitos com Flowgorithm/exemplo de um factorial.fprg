@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jo&#227;o"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-03-16 11:49:18 "/>
+        <attribute name="created" value="Sm/Do287IE1BTlpBUlJBOyAyMDE2LTAzLTA5OyAxMjo0MjowNiA7IDIzNDY="/>
+        <attribute name="edited" value="Sm/Do287IE1BTlpBUlJBOyAyMDE2LTAzLTE2OyAxMTo0OToxOCA7IDIzNTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size="" variables="x"/>
+            <declare name="y" type="Integer" array="False" size="" variables="y"/>
+            <output expression="&quot;Insere um valor para calcular o factorial: &quot;"/>
+            <input variable="x"/>
+            <assign variable="y" expression="1"/>
+            <while expression="x!=0">
+                <assign variable="y" expression="y*x"/>
+                <assign variable="x" expression="x-1"/>
+            </while>
+            <output expression="&quot;O valor resultante do factorial que inseriste e:&quot;"/>
+            <output expression="y"/>
+        </body>
+    </function>
+</flowgorithm>

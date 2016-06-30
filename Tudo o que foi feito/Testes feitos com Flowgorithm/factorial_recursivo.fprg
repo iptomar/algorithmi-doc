@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jo&#227;o"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-04-08 09:35:28 "/>
+        <attribute name="created" value="Sm/Do287IE1BTlpBUlJBOyAyMDE2LTA0LTAzOyAxMDo0NToxMCA7IDIzMzc="/>
+        <attribute name="edited" value="Sm/Do287IE1BTlpBUlJBOyAyMDE2LTA0LTA4OyAwOTozNToyOCA7IDIzNTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size="" variables="n"/>
+            <output expression="&quot;Insira o valor do factorial a calcular: &quot;"/>
+            <input variable="n"/>
+            <declare name="i" type="Integer" array="False" size="" variables="i"/>
+            <assign variable="i" expression="Factorial(n)"/>
+            <output expression="i"/>
+        </body>
+    </function>
+    <function name="Factorial" type="Integer" variable="i">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size="" variables="i"/>
+            <if expression="n &gt; 1">
+                <then>
+                    <assign variable="i" expression="n*Factorial(n-1)"/>
+                </then>
+                <else>
+                    <assign variable="i" expression="1"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jo&#227;o"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-03-28 05:17:36 "/>
+        <attribute name="created" value="Sm/Do287IE1BTlpBUlJBOyAyMDE2LTAzLTIxOyAxMjoyOTowNiA7IDIzNDU="/>
+        <attribute name="edited" value="Sm/Do287IE1BTlpBUlJBOyAyMDE2LTAzLTI4OyAwNToxNzozNiA7IDIzNTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size="" variables="x"/>
+            <declare name="GoodInput" type="Boolean" array="False" size="" variables="GoodInput"/>
+            <assign variable="GoodInput" expression="false"/>
+            <while expression="GoodInput == false">
+                <output expression="&quot;seleciona uma das opcoes que queiras fazer&quot;"/>
+                <output expression="&quot;1 - C&#225;lculo do IMC&quot;"/>
+                <output expression="&quot;2 - c&#225;lculo do factorial&quot;"/>
+                <input variable="x"/>
+                <if expression="x &gt; 2 || x &lt; 1">
+                    <then>
+                        <output expression="&quot;O valor que inseriu est&#225; errado&quot;"/>
+                    </then>
+                    <else>
+                        <if expression="x == 1">
+                            <then>
+                                <call expression="CalculoIMC()"/>
+                            </then>
+                            <else>
+                                <if expression="x == 2">
+                                    <then>
+                                        <call expression="factorial()"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Quer fazer outra fun&#231;&#227;o? (1 para sim)&quot;"/>
+                <input variable="x"/>
+                <if expression="x == 1">
+                    <then/>
+                    <else>
+                        <assign variable="GoodInput" expression="true"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="CalculoIMC" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Peso" type="Real" array="False" size="" variables="Peso"/>
+            <declare name="Altura" type="Real" array="False" size="" variables="Altura"/>
+            <declare name="IMC" type="Real" array="False" size="" variables="IMC"/>
+            <output expression="&quot;Qual o seu peso?&quot;"/>
+            <input variable="Peso"/>
+            <output expression="&quot;Qual a sua altura?&quot;"/>
+            <input variable="Altura"/>
+            <assign variable="IMC" expression="(Peso / (Altura^2))"/>
+            <if expression="IMC &lt; 31.1">
+                <then>
+                    <if expression="IMC &lt; 27.8">
+                        <then>
+                            <if expression="IMC &lt; 26.4">
+                                <then>
+                                    <if expression="IMC &lt;20.7">
+                                        <then>
+                                            <output expression="&quot;Est&#225;s abaixo do peso&quot;"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Yay! est&#225;s no ponto!&quot;"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Est&#225;s ligeiramente acima do peso normal, se calhar &#233; uma boa altura para ter mais cuidados com o corpo&quot;"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;est&#225;s acima do peso ideal! n&#227;o que um pouco de exercicio n&#227;o resolva&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;&#201;s um Obeso. come&#231;a a fazer desporto!&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="factorial" type="None" variable="y">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size="" variables="x"/>
+            <declare name="GoodInput" type="Boolean" array="False" size="" variables="GoodInput"/>
+            <assign variable="GoodInput" expression="false"/>
+            <while expression="GoodInput == false">
+                <output expression="&quot;Coloque o numero a calcular:&quot;"/>
+                <input variable="x"/>
+                <if expression="x &lt; 1">
+                    <then>
+                        <output expression="&quot;Numero Inv&#225;lido&quot;"/>
+                    </then>
+                    <else>
+                        <assign variable="GoodInput" expression="true"/>
+                    </else>
+                </if>
+            </while>
+            <declare name="y" type="Integer" array="False" size="" variables="y"/>
+            <assign variable="y" expression="1"/>
+            <while expression="x!=1">
+                <assign variable="y" expression="y*x"/>
+                <assign variable="x" expression="x-1"/>
+            </while>
+            <output expression="&quot;O resultado do factorial que apresentou &#233;:&quot;"/>
+            <output expression="y"/>
+        </body>
+    </function>
+</flowgorithm>

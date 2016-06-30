@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jo&#227;o"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-03-16 12:50:07 "/>
+        <attribute name="created" value="Sm/Do287IE1BTlpBUlJBOyAyMDE2LTAzLTE2OyAxMjo0MTo1OCA7IDIzNTA="/>
+        <attribute name="edited" value="Sm/Do287IE1BTlpBUlJBOyAyMDE2LTAzLTE2OyAxMjo1MDowNyA7IDIzNDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size="" variables="a"/>
+            <declare name="b" type="Real" array="False" size="" variables="b"/>
+            <declare name="c" type="Real" array="False" size="" variables="c"/>
+            <declare name="x" type="Real" array="False" size="" variables="x"/>
+            <declare name="y" type="Real" array="False" size="" variables="y"/>
+            <output expression="&quot;Insere o valor de a, b e c respectivamente: &quot;"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="x" expression="(-b+Sqrt(4*a*c))/2*a"/>
+            <assign variable="y" expression="(-b-Sqrt(4*a*c))/2*a"/>
+            <output expression="&quot;Os zeros da funcao sao: &quot;"/>
+            <output expression="x"/>
+            <output expression="y"/>
+        </body>
+    </function>
+</flowgorithm>
